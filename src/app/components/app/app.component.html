@@ -1,0 +1,66 @@
+
+
+<md-sidenav-container class="container-main">
+ <md-toolbar>
+	<div class="col-xs-4 col-md-4">
+		<i md-button (click)="sidenav.open()" class="material-icons md-36">menu</i>
+	</div>
+	<div class="col-xs-4 col-md-4 center">
+		
+	</div>
+	<div class="col-xs-4 col-md-4 right">
+		<i class="material-icons md-36">search</i>
+		<i class="material-icons md-36">more_vert</i>
+	</div>
+</md-toolbar>
+	<md-sidenav #sidenav class="sidenav-style" opened="false" mode="push">
+		<i md-button (click)="sidenav.close()" class="material-icons md-36">cancel</i>
+		Jolly good!
+
+	</md-sidenav>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-md-4" *ngFor="let answ of answer">
+				<h1>{{ answ.title }}</h1>
+				<img src="{{ answ.answer[0].answer_desc}}" class="postImg">
+				<p class="postText">{{ answ.desc }}</p><br>
+			</div>
+		</div>
+	</div>
+
+	<!--<md-grid-list cols="4">
+		<md-grid-tile cols='1' rows='1'>
+			
+		</md-grid-tile>
+		<button md-fab (click)="addData()"><md-icon>add circle</md-icon></button>
+		<md-grid-tile
+			*ngFor="let tile of tiles"
+			[colspan]="tile.cols"
+			[rowspan]="tile.rows">
+
+		<md-card class="example-card">
+			<md-card-header>
+				<div md-card-avatar class="example-header-image"></div>
+				<md-card-title>Shiba Inu</md-card-title>
+				<md-card-subtitle>Dog Breed</md-card-subtitle>
+			</md-card-header>
+				<img md-card-image class="img" src="http://sejs.se/imagetemp/familjbild.jpg">
+				<md-card-content>
+					<p>
+						The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+						A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+						bred for hunting.
+					</p>
+				</md-card-content>
+				<md-card-actions>
+					<button md-button>LIKE</button>
+					<button md-button>SHARE</button>
+				</md-card-actions>
+			</md-card>
+			</md-grid-tile>
+
+	</md-grid-list>-->
+
+
+
+</md-sidenav-container>

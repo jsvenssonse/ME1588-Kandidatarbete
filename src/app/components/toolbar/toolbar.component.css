@@ -1,0 +1,26 @@
+
+/*
+Light Blue
+https://material.io/guidelines/style/color.html#color-color-palette
+*/
+
+md-toolbar{
+	background-color: #03A9F4;
+	box-shadow: 0px 3px 7px #01579B;
+}
+
+.material-icons.md-36 { font-size: 36px; }
+
+.center{
+	text-align: center;
+	font-size: 36px;
+}
+
+.right{
+	text-align: right;
+}
+
+.sidenav-style{
+	min-width: 30%;
+	background-color: #fff;
+}
